@@ -1,13 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar */
+.lux-navbar {
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  padding: 0.8rem 0;
+}
+
+.lux-brand {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.lux-link {
+  color: #bbb !important;
+  margin-left: 20px;
+  transition: color 0.3s ease;
+}
+
+.lux-link:hover {
+  color: #fff !important;
+}
+
+/* Hero */
+.lux-hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #000 60%, #111);
+  text-align: center;
+}
+
+.lux-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.lux-subtitle {
+  color: #ccc;
+  font-size: 1.2rem;
+}
+
+.lux-btn {
+  background-color: #fff;
+  color: #000;
+  border-radius: 25px;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.lux-btn:hover {
+  background-color: #ccc;
+}
+
+/* Sections */
+.lux-section {
+  padding: 80px 0;
+}
+
+.lux-heading {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.lux-text {
+  font-size: 1rem;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.lux-list li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+/* Footer */
+.lux-footer {
+  background-color: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 25px 0;
+  border-top: 1px solid #222;
 }
