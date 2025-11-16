@@ -15,10 +15,33 @@ const Contact = () => {
     setFormData({ ...formData, [name]: files ? files[0] : value });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Your message has been sent successfully!");
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  const data = new FormData();
+  data.append("name", formData.name);
+  data.append("email", formData.email);
+  data.append("message", formData.message);
+  if (formData.file) data.append("file", formData.file);
+
+  try {
+    const response = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      body: data,
+    });
+
+    const result = await response.json();
+    if (result.success) {
+      alert("Your message has been sent successfully!");
+      setFormData({ name: "", email: "", message: "", file: null });
+    } else {
+      alert("Something went wrong. Please try again later.");
+    }
+  } catch (error) {
+    console.error("Error:", error);
+    alert("Error sending message.");
+  }
+};
+
 
   return (
     <div className="contact-container">
@@ -93,4 +116,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact

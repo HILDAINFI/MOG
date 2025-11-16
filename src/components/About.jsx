@@ -17,6 +17,8 @@ const About = () => {
         </div>
       </section>
 
+   
+
       {/* About Cards */}
       <section className="about-section fade-up-delay">
         <h2>About Ministry of Recruiters</h2>

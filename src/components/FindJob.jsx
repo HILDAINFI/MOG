@@ -67,6 +67,7 @@ const FindJob = () => {
               className="job-card"
               onClick={() => setSelectedJob(job)}
             >
+              
               <div className="job-header">
                 <h3>{job.title}</h3>
                 <span className="company">{job.company}</span>

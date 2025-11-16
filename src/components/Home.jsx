@@ -10,11 +10,11 @@ import {
 import "./Home.css";
 
 const iconsData = [
-  { name: "Home", icon: <FaHome />, path: "/home-details" },
+  { name: "Home", icon: <FaHome />, path: "/homepage" },
   { name: "About", icon: <FaInfoCircle />, path: "/about" },
-  { name: "Find Job", icon: <FaBriefcase />, path: "/findjob" },
-  { name: "Contact Us", icon: <FaEnvelope />, path: "/contact" },
-  { name: "Landing Page", icon: <FaRocket />, path: "/landing" },
+  { name: "Job", icon: <FaBriefcase />, path: "/find-job" },
+  { name: "Contact ", icon: <FaEnvelope />, path: "/contact" },
+  { name: "Launch", icon: <FaRocket />, path: "/home" },
 ];
 
 const ICON_SIZE = 90;

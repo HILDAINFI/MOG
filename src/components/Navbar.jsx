@@ -16,7 +16,7 @@ const NavbarSection = () => (
             placement="bottom"
             overlay={<Tooltip id="home-tooltip">Home</Tooltip>}
           >
-            <Nav.Link href="#home" className="text-white fs-5">
+            <Nav.Link href="/HomePage" className="text-white fs-5">
               <FaHome />
             </Nav.Link>
           </OverlayTrigger>
@@ -26,7 +26,7 @@ const NavbarSection = () => (
             placement="bottom"
             overlay={<Tooltip id="about-tooltip">About Us</Tooltip>}
           >
-            <Nav.Link href="#about" className="text-white fs-5">
+            <Nav.Link href="/about" className="text-white fs-5">
               <FaInfoCircle />
             </Nav.Link>
           </OverlayTrigger>
@@ -34,9 +34,9 @@ const NavbarSection = () => (
           {/* Services */}
           <OverlayTrigger
             placement="bottom"
-            overlay={<Tooltip id="services-tooltip">Services</Tooltip>}
+            overlay={<Tooltip id="services-tooltip">Find A job</Tooltip>}
           >
-            <Nav.Link href="#services" className="text-white fs-5">
+            <Nav.Link href="/find-job" className="text-white fs-5">
               <FaServicestack />
             </Nav.Link>
           </OverlayTrigger>
@@ -46,7 +46,7 @@ const NavbarSection = () => (
             placement="bottom"
             overlay={<Tooltip id="contact-tooltip">Contact</Tooltip>}
           >
-            <Nav.Link href="#contact" className="text-white fs-5">
+            <Nav.Link href="/contact" className="text-white fs-5">
               <FaEnvelope />
             </Nav.Link>
           </OverlayTrigger>
